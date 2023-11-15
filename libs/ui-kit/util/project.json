@@ -1,0 +1,36 @@
+{
+  "name": "ui-kit-util",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui-kit/util/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/ui-kit/util",
+        "main": "libs/ui-kit/util/src/index.ts",
+        "tsConfig": "libs/ui-kit/util/tsconfig.lib.json",
+        "assets": ["libs/ui-kit/util/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/ui-kit/util/**/*.ts",
+          "libs/ui-kit/util/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/ui-kit/util/jest.config.ts"
+      }
+    }
+  },
+  "tags": []
+}
