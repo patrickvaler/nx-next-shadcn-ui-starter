@@ -1,6 +1,5 @@
 const { join } = require('path');
 
-const defaultTheme = require('tailwindcss/defaultTheme');
 const TailwindAnimate = require('tailwindcss-animate');
 
 module.exports = {
@@ -51,9 +50,6 @@ module.exports = {
         lg: `var(--radius)`,
         md: `calc(var(--radius) - 2px)`,
         sm: 'calc(var(--radius) - 4px)',
-      },
-      fontFamily: {
-        sans: ['var(--font-sans)', ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
         'accordion-down': {

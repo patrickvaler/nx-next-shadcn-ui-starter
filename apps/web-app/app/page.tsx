@@ -1,23 +1,20 @@
-import styles from './page.module.css';
+import { Button } from '@nx-next-shadcn-ui-starter/ui-kit/ui';
 
 export default async function Index() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.css file.
-   */
   return (
-    <div className={styles.page}>
-      <p className="text-indigo-600">Just a Tailwindcss Test</p>
-      <div className="wrapper">
-        <div className="container">
-          <div id="welcome">
-            <h1>
-              <span> Hello there, </span>
-              Welcome web-app 👋
-            </h1>
-          </div>
+    <div className="hidden h-full flex-1 flex-col space-y-8 p-8 md:flex">
+      <div className="flex items-center justify-between space-y-2">
+        <div>
+          <h2 className="text-2xl font-bold tracking-tight">
+            Welcome to web-app!
+          </h2>
+          <p className="text-muted-foreground">
+            A project to show how to integrate shadcn/ui with Next.js and Nx
+          </p>
         </div>
+      </div>
+      <div>
+        <Button>Click me!</Button>
       </div>
     </div>
   );
