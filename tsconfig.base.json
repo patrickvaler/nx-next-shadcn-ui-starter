@@ -16,9 +16,11 @@
     "baseUrl": ".",
     "paths": {
       "@nx-next-shadcn-ui-starter/ui-kit/ui": ["libs/ui-kit/ui/src/index.ts"],
+      "@nx-next-shadcn-ui-starter/ui-kit/ui/*": ["libs/ui-kit/ui/src/*"],
       "@nx-next-shadcn-ui-starter/ui-kit/util": [
         "libs/ui-kit/util/src/index.ts"
-      ]
+      ],
+      "@nx-next-shadcn-ui-starter/ui-kit/util/*": ["libs/ui-kit/util/src/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
