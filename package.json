@@ -2,7 +2,10 @@
   "name": "@nx-next-shadcn-ui-starter/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "npm run start:web-app",
+    "start:web-app": "nx run web-app:serve"
+  },
   "private": true,
   "dependencies": {
     "@nx/next": "17.1.2",
