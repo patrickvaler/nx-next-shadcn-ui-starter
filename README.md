@@ -2,6 +2,8 @@
 
 This is a starter repository for integrating [shadcn/ui](https://github.com/shadcn/ui) with [Next.js](https://nextjs.org/) in an [Nx](https://nx.dev/) monorepo.
 
+Detailed instructions for configuring and setting up this repository can be found in a tutorial on [Medium.com](https://medium.com/@patrickvaler/how-to-get-started-with-shadcn-ui-and-next-js-within-a-nx-monorepo-57908f48b4ef). Explore the tutorial for comprehensive insights into the repository's setup, ensuring a smooth and informed integration process.
+
 ## Features
 
 - Shared library based on `shadcn/ui` components integrated in Next.js app
