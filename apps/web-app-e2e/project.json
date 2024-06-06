@@ -2,6 +2,7 @@
   "name": "web-app-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/web-app-e2e/src",
+  "implicitDependencies": ["web-app"],
   "targets": {
     "e2e": {
       "executor": "@nx/playwright:playwright",
@@ -11,12 +12,7 @@
       }
     },
     "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["apps/web-app-e2e/**/*.{js,ts}"]
-      }
+      "executor": "@nx/eslint:lint"
     }
-  },
-  "implicitDependencies": ["web-app"]
+  }
 }
